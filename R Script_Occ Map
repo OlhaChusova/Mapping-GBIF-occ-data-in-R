@@ -1,4 +1,7 @@
 # Встановлення пакетів
+install.packages(ggplot2)
+install.packages(sf)
+install.packages(dplyr)
 install.packages("rgeoboundaries")
 
 # Завантажуємо бібліотеки
