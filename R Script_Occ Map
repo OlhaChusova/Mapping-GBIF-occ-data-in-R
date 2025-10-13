@@ -2,7 +2,8 @@
 install.packages(ggplot2)
 install.packages(sf)
 install.packages(dplyr)
-install.packages("rgeoboundaries")
+
+remotes::install_github("wmgeolab/rgeoboundaries")
 
 # Завантажуємо бібліотеки
 library(ggplot2)
