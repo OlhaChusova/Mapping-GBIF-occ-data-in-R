@@ -3,6 +3,7 @@ install.packages(ggplot2)
 install.packages(sf)
 install.packages(dplyr)
 
+install.packages("devtools")
 devtools::install_github("wmgeolab/rgeoboundaries")
 
 # Завантажуємо бібліотеки
