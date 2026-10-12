@@ -10,9 +10,12 @@ options(gbif_user="YOUR USER NAME HERE")
 options(gbif_pwd="YOUR PASSWORD HERE")
 options(gbif_email="YOUR EMAIL HERE")
 
-occ_download(pred_in("taxonKey", c(2878688, 2880539)), pred("country", "UA"), format = "SIMPLE_CSV")
+# # Our species taxon key
+taxon_key <- "4R5YN"
 
-que <- occ_download_get("0010918-241007104925546", overwrite = TRUE) # insert download key in ""
+occ_download(pred("taxonKey", taxon_key), pred("country", "UA"), format = "SIMPLE_CSV")
+
+que <- occ_download_get(download) # insert download key in ""
 que <- occ_download_import(que)
 
 # Select necessary column ("species", "decimalLatitude", "decimalLongitude") from dataframe downloaded from GBIF
